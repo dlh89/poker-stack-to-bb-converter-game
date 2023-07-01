@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poker Stack to BB Converter Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="text-center">
+    <div class="container py-5">
+        <h1 class="display-4 mb-5">Poker Stack to BB Converter Game</h1>
+        <form action="" class="js-answer-form">
+            <p class="lead" id="bb">Big Blind: </p>
+            <p class="lead" id="stack">Stack: </p>
+            <div class="input-group input-group-lg mb-3">
+                <input type="text" id="playerAnswer" placeholder="Enter your answer here" class="form-control js-answer-input">
+                <div class="input-group-append">
+                    <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            <p class="lead" id="score">Score: 0</p>
+            <p id="result" class="font-weight-bold"></p>
+            <p id="difference"></p>
+        </form>
+        <button id="continue" onclick="continueGame()" class="btn btn-lg btn-success mt-3">Continue</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
